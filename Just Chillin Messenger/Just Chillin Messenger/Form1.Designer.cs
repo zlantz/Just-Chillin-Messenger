@@ -60,6 +60,8 @@
             this.groupBox1.Controls.Add(this.displayName);
             this.groupBox1.Controls.Add(this.textLocalPort);
             this.groupBox1.Controls.Add(this.textLocalIp);
+            this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(41, 246);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(300, 130);
@@ -72,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(20, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(36, 12);
             this.label2.TabIndex = 4;
             this.label2.Text = "PORT";
             // 
@@ -81,7 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 13);
+            this.label1.Size = new System.Drawing.Size(15, 12);
             this.label1.TabIndex = 3;
             this.label1.Text = "IP";
             // 
@@ -113,6 +115,8 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.textFriendsIp);
+            this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(429, 246);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(300, 130);
@@ -125,7 +129,7 @@
             this.textFriendsPort.AutoSize = true;
             this.textFriendsPort.Location = new System.Drawing.Point(50, 85);
             this.textFriendsPort.Name = "textFriendsPort";
-            this.textFriendsPort.Size = new System.Drawing.Size(37, 13);
+            this.textFriendsPort.Size = new System.Drawing.Size(36, 12);
             this.textFriendsPort.TabIndex = 3;
             this.textFriendsPort.Text = "PORT";
             // 
@@ -134,7 +138,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(50, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 13);
+            this.label3.Size = new System.Drawing.Size(15, 12);
             this.label3.TabIndex = 2;
             this.label3.Text = "IP";
             // 
@@ -208,9 +212,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1, 104);
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.Size = new System.Drawing.Size(80, 12);
             this.label4.TabIndex = 5;
             this.label4.Text = "Display Name";
             // 
