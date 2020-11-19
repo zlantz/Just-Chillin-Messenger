@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.displayName = new System.Windows.Forms.TextBox();
@@ -46,7 +47,7 @@
             this.buttonSend = new System.Windows.Forms.Button();
             this.buttonDisconnect = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btn_LogOut = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +69,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Client 1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 12);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Display Name";
             // 
             // label2
             // 
@@ -173,6 +184,7 @@
             // 
             // buttonConnect
             // 
+            this.buttonConnect.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConnect.Location = new System.Drawing.Point(762, 250);
             this.buttonConnect.Name = "buttonConnect";
             this.buttonConnect.Size = new System.Drawing.Size(100, 35);
@@ -192,6 +204,7 @@
             // 
             // buttonDisconnect
             // 
+            this.buttonDisconnect.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDisconnect.Location = new System.Drawing.Point(762, 342);
             this.buttonDisconnect.Name = "buttonDisconnect";
             this.buttonDisconnect.Size = new System.Drawing.Size(100, 35);
@@ -209,15 +222,16 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // btn_LogOut
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 104);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 12);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Display Name";
+            this.btn_LogOut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LogOut.Location = new System.Drawing.Point(762, 28);
+            this.btn_LogOut.Name = "btn_LogOut";
+            this.btn_LogOut.Size = new System.Drawing.Size(100, 35);
+            this.btn_LogOut.TabIndex = 3;
+            this.btn_LogOut.Text = "LogOut";
+            this.btn_LogOut.UseVisualStyleBackColor = true;
+            this.btn_LogOut.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -228,13 +242,14 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonDisconnect);
             this.Controls.Add(this.buttonSend);
+            this.Controls.Add(this.btn_LogOut);
             this.Controls.Add(this.buttonConnect);
             this.Controls.Add(this.textMessage);
             this.Controls.Add(this.listMessage);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Messenger";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -265,6 +280,7 @@
         private System.Windows.Forms.Button buttonDisconnect;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_LogOut;
     }
 }
 

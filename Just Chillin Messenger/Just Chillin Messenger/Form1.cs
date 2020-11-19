@@ -148,6 +148,20 @@ namespace Just_Chillin_Messenger
 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login fl = new Login();
+            fl.Show();
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+    
+
         //***************testing this block*************************************
         private void Form1_Load(object sender, EventArgs e)
         {
